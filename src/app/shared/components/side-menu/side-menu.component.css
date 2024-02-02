@@ -1,0 +1,13 @@
+.boton {
+  background: rgb(5, 149, 245) !important;
+  border-color: #fff;
+  border-radius: 10px;
+  color: #fff;
+  transition: 0.2s ease-in-out;
+}
+
+.boton:hover {
+  background: rgba(3, 61, 252, 0.81) !important;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.81);
+}
