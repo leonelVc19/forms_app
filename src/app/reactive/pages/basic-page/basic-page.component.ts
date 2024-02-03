@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators, FormGroup } from '@angular/forms';
+import { ValidatorsService } from 'src/app/shared/services/validators.service';
 
 const product = {
   name: 'e',
@@ -23,7 +24,10 @@ export class BasicPageComponent implements OnInit {
 
   //*formBuilder
 
-  constructor( private fB: FormBuilder ) { }
+  constructor(
+    private fB: FormBuilder,
+    private validatorService: ValidatorsService
+  ) { }
 
   ngOnInit(): void {
     // this.myForm.reset(product)
@@ -32,8 +36,8 @@ export class BasicPageComponent implements OnInit {
 
   //simplicar las validaciones
   public isValid(field: string): boolean | null {
-    return this.myForm.controls[field].errors
-      && this.myForm.controls[field].touched;
+    return this.validatorService.isValidField(this.myForm, field)
+
   };
 
   public getFieldError(field: string): string | null{
