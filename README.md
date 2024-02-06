@@ -1,6 +1,6 @@
 # FormsApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
+Url donde se puede ver el proyecto publicado en GitHubPages [URL TES](https://leonelvc19.github.io/forms_app/reactive/basic)
 
 ## Development server
 
