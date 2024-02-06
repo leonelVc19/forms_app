@@ -1,6 +1,6 @@
 # FormsApp
 
-Url donde se puede ver el proyecto publicado en GitHubPages [URL TES](https://leonelvc19.github.io/forms_app/reactive/basic)
+Url donde se puede ver el proyecto publicado en GitHubPages [URL TES](https://leonelvc19.github.io/forms_app/)
 
 ## Development server
 
