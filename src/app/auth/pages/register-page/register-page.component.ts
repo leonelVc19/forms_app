@@ -15,9 +15,8 @@ export class RegisterPageComponent {
     private fb: FormBuilder,
     private validatorServices: ValidatorsService,
     private emalServices: EmailValidatorService,
-  ) {
-
-  }
+  ) {};
+  
   public myForm: FormGroup = this.fb.group({
     name: ['', [Validators.required,  Validators.pattern(this. validatorServices.firstNameAndLastnamePattern)]],
     // email: ['',  [Validators.required, Validators.pattern(this. validatorServices.emailPattern )],[ new EmailValidatorService ]],
